@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотостудия | Профессиональная фотосъемка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>📸 ФОТОСТУДИЯ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- СЛАЙДЕР -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/slide1.jpg')">
+                <div class="slide-content">
+                    <h1>Твои лучшие моменты</h1>
+                    <p>Профессиональная фотосъемка для жизни, бизнеса и вдохновения</p>
+                    <a href="#contact" class="btn">Записаться →</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/slide2.jpg')">
+                <div class="slide-content">
+                    <h1>Студия с душой</h1>
+                    <p>Современное оборудование и уютная атмосфера</p>
+                    <a href="#contact" class="btn">Забронировать →</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/slide3.jpg')">
+                <div class="slide-content">
+                    <h1>Профессиональная съемка</h1>
+                    <p>Поможем создать идеальные фото</p>
+                    <a href="#contact" class="btn">Узнать цены →</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="services">
+        <h2>Наши услуги</h2>
+        <div class="service-cards">
+            <div class="card">
+                <div class="card-icon">📷</div>
+                <h3>Портретная съемка</h3>
+                <p>Индивидуальные и семейные фотосессии в студии или на локации</p>
+                <p class="price">от 3 000 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💼</div>
+                <h3>Бизнес-портрет</h3>
+                <p>Для резюме, сайта компании и социальных сетей</p>
+                <p class="price">от 5 000 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎉</div>
+                <h3>События</h3>
+                <p>Свадьбы, дни рождения, корпоративы</p>
+                <p class="price">от 10 000 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Ретушь фото</h3>
+                <p>Профессиональная обработка любых снимков</p>
+                <p class="price">от 500 ₽/фото</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section id="portfolio" class="portfolio">
+        <h2>Примеры работ</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/images/portfolio1.jpg" alt="Фотосессия 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/portfolio2.jpg" alt="Фотосессия 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/portfolio3.jpg" alt="Фотосессия 3">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/portfolio4.jpg" alt="Фотосессия 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="contact">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉ info@fotostudio.ru</p>
+                <p>📍 г. Москва, ул. Тверская, 15</p>
+                <p>⏰ Пн-Вс: 10:00 - 21:00</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="Name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+                <input type="tel" id="phone" name="Phone" placeholder="Телефон">
+                <textarea id="message" name="Message" placeholder="Сообщение" rows="4" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+        <div id="form-status" class="form-status"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 ФОТОСТУДИЯ. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
