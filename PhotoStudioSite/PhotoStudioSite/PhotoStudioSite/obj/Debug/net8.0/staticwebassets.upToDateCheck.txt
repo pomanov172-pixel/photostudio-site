@@ -1,0 +1,10 @@
+wwwroot\css\style.css
+wwwroot\images\portfolio1.jpg
+wwwroot\images\portfolio2.jpg
+wwwroot\images\portfolio3.jpg
+wwwroot\images\portfolio4.jpg
+wwwroot\images\slide1.jpg
+wwwroot\images\slide2.jpg
+wwwroot\images\slide3.jpg
+wwwroot\index.html
+wwwroot\js\script.js
